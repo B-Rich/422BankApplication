@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
   <TopNode>[0-1640]C:\Users\DjEnjin\Desktop\422\hw 6\repo\bin\Debug\422BankApplicationSharp.exe</TopNode>
-  <SelectedNode>[0-1636]_422BankApplicationSharp.testManager.testdeleteAccountSuccess</SelectedNode>
+  <SelectedNode>[0-1641]_422BankApplicationSharp</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
     <Node UniqueName="[0-1640]C:\Users\DjEnjin\Desktop\422\hw 6\repo\bin\Debug\422BankApplicationSharp.exe" Expanded="true" />

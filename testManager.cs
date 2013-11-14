@@ -139,15 +139,93 @@ young
 
         //public bool updateAccount()
         [Test]
-        public void testUpdateAccount()
+        public void testUpdateAccountSuccess()
         {
+            BankManager a = new BankManager(1);
+            string test = @"1
+young
+15.34
+11/13/13";
+            StringWriter sw = new StringWriter();
+            StringReader sr = new StringReader(test);
+
+            Console.SetIn(sr);
+            Console.SetOut(sw);
+            a.createAccount();
+
+            test = @"1
+1
+hello";
+            sr = new StringReader(test);
+            Console.SetIn(sr);
+            Console.SetOut(sw);
+            Assert.IsTrue(a.updateAccount());
+            test = @"1
+2
+14.00
+";
+            sr = new StringReader(test);
+            Console.SetIn(sr);
+            Console.SetOut(sw);
+            Assert.IsTrue(a.updateAccount());
+            test = @"1
+3
+14.00";
+            sr = new StringReader(test);
+            Console.SetIn(sr);
+            Console.SetOut(sw);
+            Assert.IsTrue(a.updateAccount());
         }
 
-        //public int findAccount()
+
+        //public bool updateAccount()
         [Test]
-        public void testFindAccount()
+        public void testUpdateAccountFail()
         {
-        }
+            BankManager a = new BankManager(1);
+            string test = @"1
+young
+15.34
+11/13/13";
+            StringWriter sw = new StringWriter();
+            StringReader sr = new StringReader(test);
 
+            Console.SetIn(sr);
+            Console.SetOut(sw);
+            a.createAccount();
+
+            test = @"2
+1
+hello";
+            sr = new StringReader(test);
+            Console.SetIn(sr);
+            Console.SetOut(sw);
+            Assert.IsFalse(a.updateAccount());
+
+            
+            test = @"21
+2
+10.00
+";
+            sr = new StringReader(test);
+            Console.SetIn(sr);
+            Console.SetOut(sw);
+            Assert.IsFalse(a.updateAccount());
+            test = @"3
+3
+14.00";
+            sr = new StringReader(test);
+            Console.SetIn(sr);
+            Console.SetOut(sw);
+            Assert.IsFalse(a.updateAccount());
+            test = @"1
+3
+100.00
+";
+            sr = new StringReader(test);
+            Console.SetIn(sr);
+            Console.SetOut(sw);
+            Assert.IsTrue(a.updateAccount());
+        }
     }
 }
