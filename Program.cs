@@ -10,6 +10,7 @@ namespace _422BankApplicationSharp
     {
         static void Main(string[] args)
         {
+            //Generic main function that instantiates a new bank manager and then calls run bank application
             BankManager bankapp = new BankManager();
             bankapp.runBankApplication();
         }

@@ -29,27 +29,7 @@ namespace _422BankApplicationSharp
             this.mName = copyAccount.mName;
         }
 
-        //Getters and setters
-        public double MBalance
-        {
-            get { return mBalance; }
-            set { mBalance = value; }
-        }
-        public int MAccountNumber
-        {
-            get { return mAccountNumber; }
-            set { mAccountNumber = value; }
-        }
-        public string MName
-        {
-            get { return mName; }
-            set { mName = value; }
-        }
-        public string MDateCreated
-        {
-            get { return mDateCreated; }
-            set { mDateCreated = value; }
-        }
+        
 
         //Methods
 
@@ -91,14 +71,40 @@ namespace _422BankApplicationSharp
 
 
         //Private variables
+
+        //The balance of the account
         private double mBalance;
 
+        //The unique identifying account number
         private int mAccountNumber;
 
+        //The name associated with the account
         private string mName;
 
+        //The date the account was created, as a string.
         private string mDateCreated;
 
-        
+        //Getters and setters for the above
+
+        public double MBalance
+        {
+            get { return mBalance; }
+            set { mBalance = value; }
+        }
+        public int MAccountNumber
+        {
+            get { return mAccountNumber; }
+            set { mAccountNumber = value; }
+        }
+        public string MName
+        {
+            get { return mName; }
+            set { mName = value; }
+        }
+        public string MDateCreated
+        {
+            get { return mDateCreated; }
+            set { mDateCreated = value; }
+        }
     }
 }
