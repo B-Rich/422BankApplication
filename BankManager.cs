@@ -10,6 +10,9 @@ namespace _422BankApplicationSharp
     class BankManager
     {
         //constructors
+        /// <summary>
+        /// Zero argument constructor, defaults number of accounts to 1024
+        /// </summary>
         public BankManager()
         {
             mAccounts = new List<Account>();
@@ -21,7 +24,10 @@ namespace _422BankApplicationSharp
             mNumberAccounts = 1024;
 
         }
-
+        /// <summary>
+        /// Bankmanager constructor that takes a single argument for the maximum number of accounts
+        /// </summary>
+        /// <param name="maxNumberAccounts"></param>
         public BankManager(int maxNumberAccounts)
         {
             mAccounts = new List<Account>();
@@ -35,6 +41,10 @@ namespace _422BankApplicationSharp
         }
 
         //Methods
+
+        /// <summary>
+        /// Displays the main menu for the manager class
+        /// </summary>
         public void displayMenu()
         {
             Console.WriteLine(" 1. Create Account");
@@ -43,7 +53,10 @@ namespace _422BankApplicationSharp
             Console.WriteLine(" 4. Display Account");
             Console.WriteLine(" 5. Exit");
         }
-
+        /// <summary>
+        /// Gets a menu option from the user and returns it as an integer
+        /// </summary>
+        /// <returns>Menue option as int</returns>
         public int getMenuOption()
         {
             int option = 0;
@@ -53,7 +66,10 @@ namespace _422BankApplicationSharp
 
             return option;
         }
-
+        /// <summary>
+        /// Creates an account, prompting the user for all relevent information
+        /// </summary>
+        /// <returns>Returns true on success, false on failure</returns>
         public bool createAccount()
         {
             int accountNumber = 0;
@@ -100,7 +116,10 @@ namespace _422BankApplicationSharp
             }
             return success;
         }
-
+        /// <summary>
+        /// Deletes an account. Uses findAccount to prompt the user for an account number to delete
+        /// </summary>
+        /// <returns>Returns true on Success, false on failure</returns>
         public bool deleteAccount()
         {
             bool success = false;
@@ -119,7 +138,11 @@ namespace _422BankApplicationSharp
 
             return success;
         }
-
+        /// <summary>
+        /// Allows the user to update an account, with some constraints, they are prompted to either change the account name, debit the 
+        /// account, or credit it.
+        /// </summary>
+        /// <returns>Returns true on success, false on failure</returns>
         public bool updateAccount()
         {
             bool success = false;
@@ -161,7 +184,9 @@ namespace _422BankApplicationSharp
             }
             return success;
         }
-
+        /// <summary>
+        /// Displays the account specified by the user, if it exists
+        /// </summary>
         public void displayAccount()
         {
             int counter = 0;
@@ -175,7 +200,10 @@ namespace _422BankApplicationSharp
                 Console.WriteLine("WARNING: Account does not exist");
             }
         }
-
+        /// <summary>
+        /// Prompts the user for an account number, and then finds the index of the matching account, if it exists
+        /// </summary>
+        /// <returns>The index of the specified account on success, the number of elements in the array on failure</returns>
         public int findAccount()
         {
             int accountnumber = 0;
@@ -190,6 +218,9 @@ namespace _422BankApplicationSharp
             return counter;
 
         }
+        /// <summary>
+        /// Runs the bank application as the user does not select quit.
+        /// </summary>
         public void runBankApplication()
         {
             int option = 0;
@@ -240,20 +271,27 @@ namespace _422BankApplicationSharp
         }
 
         //private variables
+        
+        //The list of accounts
         List<Account> mAccounts; //The arrays have been replaced with dymically sized lists, because why not use the features of C# if we are converting to it.
-
+        //getters and setters for the above
         internal List<Account> MAccounts
         {
             get { return mAccounts; }
             set { mAccounts = value; }
         }
+
+        //A list designating whether open slots exist in the list for new accounts
         List<bool> mAccountsAvailable;
 
+        //Getters and setters for the above
         public List<bool> MAccountsAvailable
         {
             get { return mAccountsAvailable; }
             set { mAccountsAvailable = value; }
         }
+
+        //The maximum number of accounts available.
         int mNumberAccounts;
 
         public int MNumberAccounts
