@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)http://127.0.0.1:11235/#/projects/9CE8B3D93D9AD47EC2C008374AD7201829013919/executions -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>NCover Desktop: nunit-agent Project</title>
+    <link rel="stylesheet" href="http://127.0.0.1:11235/stylesheets/_compiled/ncover.css">
+<style type="text/css"></style><style type="text/css"></style></head>
+<body style="cursor: auto;">
+    <noscript>
+        &lt;br/&gt;
+        &lt;br/&gt;
+        &lt;center&gt;&lt;h3&gt;NCover requires javascript support.  Please enable javascript in your browser.&lt;/h3&gt;&lt;/center&gt;
+    </noscript>
+    <div id="ncover_main"><div id="user-info" style="display: none;"></div>
+<div id="top-bar" style="background-color: rgb(220, 220, 220); background-position: initial initial; background-repeat: initial initial;"><div id="ncoverBreadCrumb" class="bc" style="width: 1366px;">
+    <div id="bcNCover" class="raised float-menu">
+        <div id="ncoverBall" class="sprite ncover_ball"></div>
+        <div class="hoverbg dropdown hideWidth">
+            <ul>
+                <li>
+                    
+                    <a class="navContext" data-href="/#/help/desktop/getting_started/index" data-target="NCoverHelpWindow" data-hrefinternal="false">Getting Started</a>
+                    
+                    
+                    
+                </li>
+                <li>
+                    <a class="navContext" data-href="/#/help/index" data-target="NCoverHelpWindow" data-hrefinternal="false">Help Documents</a>
+                </li>
+                
+                <li>
+                    <a href="javascript:location.reload();" id="nc_refresh">Refresh</a>
+                </li>
+                
+                <hr>
+                <li>
+                    <a id="connect_to_cc" class="navContext">Connect to Code Central</a>
+                </li>
+                <li style="display: none;">
+                <a id="retry_cc_connection" class="navContext">
+                    Retry connection
+                </a>
+                </li>
+                
+                
+                
+                <hr>
+                <li>
+                    <a href="javascript: new LicenseDialog().show(null);">License Details</a>
+                </li>
+                
+                <li>
+                    <a href="javascript: ncover.checkForAvailableSoftwareUpdate();">Check for software update</a>
+                </li>
+                
+                
+                <li>
+                    <a class="bold" onclick="window.open(&#39;http://www.ncover.com/support/release_notes#4.5.2448.864&#39;,&#39;NCoverRelease&#39;)">
+                        NCover version: <span>4.5.2448.864</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="sprite vbar"></div>
+    <div id="bcHome" class="crumb home-crumb raised">
+        <div class="homebg navContext" data-href="/#/">
+            <div class="sprite cmd home_icon"></div>
+        </div>
+        <div class="chevron sprite chevron"></div>
+    </div>
+    
+
+    <div id="bcProjectsOverview"></div>
+    <div id="bcProjects"><div class="bcTrigger">
+    <div class="crumb ddParent">
+        <div class="hoverbg">
+            
+            <div class="sprite projects_icon navContext" data-href="/#/projects/9CE8B3D93D9AD47EC2C008374AD7201829013919/executions"></div>
+            <div id="bcCurrentProject" class="navContext text canShrink bold" data-href="/#/projects/9CE8B3D93D9AD47EC2C008374AD7201829013919/executions">nunit-agent Project</div>
+            
+        </div>
+        <div class="hoverbg hideWidth dropdown float-menu">
+            <div class="sprite nav dropdown_icon" style="width: 0px;"></div>
+            <ul>
+                
+                    
+                    <li>
+                        <a class="navContext" data-href="/#/projects/9CE8B3D93D9AD47EC2C008374AD7201829013919/executions">nunit-agent Project</a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+        <div class="sprite chevron" style="display: none;"></div>
+    </div>
+</div></div>
+    <div id="bcExecutions"></div>
+    <div id="bcDocsOrCode"></div>
+    <div id="bcModule"></div>
+    <div id="bcNavigationPath"></div>
+
+    <div id="bcSearch" class="right">
+        <div id="bcSearchIcon" class="sprite cmd search_icon doSearch"></div>
+    </div>
+
+    
+    
+    <div class="button project_new project_tool" style="display: none;">
+        <div class="sprite add_new_project_icon"></div>
+        <div class="text canShrink">Add New</div>
+    </div>
+    
+    
+
+    
+    <div class="button project_disableAll project_tool" style="display: none;">
+        <div class="sprite disable_all_icon"></div>
+        <div class="text canShrink">Disable All</div>
+    </div>
+    <div class="button project_enableAll project_tool" style="display: none;">
+        <div class="sprite enable_all_icon"></div>
+        <div class="text canShrink">Enable All</div>
+    </div>
+    
+</div></div>
+<div id="search-bar" class="right" style="">
+  <div id="search-input" class="right">
+    <input type="text" id="input-searchtext" class="dosearch">
+  </div>
+</div>
+<div id="split-view" style="height: 555px;">
+  <div id="side-bar" style="display: block; width: 0px; cursor: col-resize;">
+    <div id="sb-filters" class="content" style="display: block;"><div class="header">
+    
+    <div id="sb-add-filter" class="btn left toolButton">
+        <div class="left">+</div>
+        <div class="sprite filter_icon left"></div>
+    </div>
+  
+  <div>Filter Coverage</div>
+</div>
+<div id="filter-items">
+    <div class="filteritem" data-filterid="None">
+        <div class="item" data-filterid="None">No Filter</div>
+        <div class="description">Select this item to view unfiltered coverage data.</div>
+    </div>
+    
+</div></div>
+  </div>
+  <div id="sb-separator" class="separator ui-draggable" style="display: block; position: relative; left: -2px;" aria-disabled="false">
+    <div id="sb-separator-handle" class="sprite drag_handle" title=""></div>
+  </div>
+  <div id="content" style="width: 1357px;">
+    <div id="stats-header" class="contentheader" style="width: 1357px; display: block;"><div id="stat-tools" class="left">
+    <div id="tool-statistics" class="toolButton icon left depressed" alt="statistics">
+        <div class="sprite chart_icon white"></div>
+    </div>
+    <div id="tool-filters" class="toolButton icon left" alt="Apply filter">
+        <div class="sprite filter_icon"></div>
+    </div>
+    <div id="filter-applied" class="clickable" style="display: none;">None</div>
+</div>
+<div id="chart-scroller" class="right"><div class="chartScroller">            <div class="leftArrow">                      <div class="sprite arrow_left"></div> </div>                                       <div class="dots"><div class="sprite dot current"></div><div class="sprite dot"></div><div class="sprite dot"></div><div class="sprite dot"></div><div class="sprite dot"></div></div>                                       <div class="rightArrow">                     <div class="sprite arrow_right"></div></div>                                       </div></div>
+<div class="statTitle">
+    
+    <span class="statIcon sprite projects_icon light"></span><b>nunit-agent Project</b>&nbsp;|&nbsp;Statistics
+    
+</div></div>
+    <div id="charting" style="display: block;"><div class="project_stats">
+<div id="mini-charts" style="width: 12879px; margin-left: -0.140625px;">
+<div class="stats_box" id="branch-chart" style="width: 271.9px;">
+    <div class="mini-chart-label">
+        Branch Coverage: 
+        
+            <span class="mini-chart-perc">68.8%</span>
+        
+        
+            <span class="mini-chart-count">(77 of 112)</span>
+        
+    </div>
+    <div class="mini-chart app-chart-height barchart_parent" data-metric="branch"><canvas class="barchart" style="float: left; position: relative;" width="252" height="64"></canvas></div>
+</div><div class="stats_box" id="sequence-chart" style="width: 271.9px;">
+    <div class="mini-chart-label">
+        Sequence Pt. Coverage: 
+        
+            <span class="mini-chart-perc">79.6%</span>
+        
+        
+            <span class="mini-chart-count">(344 of 432)</span>
+        
+    </div>
+    <div class="mini-chart app-chart-height barchart_parent" data-metric="sequence"><canvas class="barchart" style="float: left; position: relative;" width="252" height="64"></canvas></div>
+</div><div class="stats_box" id="maxCrapScore-chart" style="width: 271.9px;">
+    <div class="mini-chart-label">
+        Max. CRAP Score: 
+        
+        
+            <span class="mini-chart-total">110</span>
+        
+    </div>
+    <div class="mini-chart app-chart-height barchart_parent" data-metric="maxCrapScore"><canvas class="barchart" style="float: left; position: relative;" width="252" height="64"></canvas></div>
+</div><div class="stats_box" id="crappyCt-chart" style="width: 271.9px;">
+    <div class="mini-chart-label">
+        CRAPpy Methods: 
+        
+        
+            <span class="mini-chart-total">2</span>
+        
+    </div>
+    <div class="mini-chart app-chart-height barchart_parent" data-metric="crappyCt"><canvas class="barchart" style="float: left; position: relative;" width="252" height="64"></canvas></div>
+</div><div class="stats_box" id="complexity-chart" style="width: 271.9px;">
+    <div class="mini-chart-label">
+        Max. Complexity: 
+        
+        
+            <span class="mini-chart-total">10</span>
+        
+    </div>
+    <div class="mini-chart app-chart-height barchart_parent" data-metric="complexity"><canvas class="barchart" style="float: left; position: relative;" width="252" height="64"></canvas></div>
+</div><div class="stats_box" id="complexityPcnt-chart" style="width: 271.9px;">
+    <div class="mini-chart-label">
+        Sat. Complexity: 
+        
+            <span class="mini-chart-perc">100.0%</span>
+        
+        
+            <span class="mini-chart-count">(46 of 46)</span>
+        
+    </div>
+    <div class="mini-chart app-chart-height barchart_parent" data-metric="complexityPcnt"><canvas class="barchart" style="float: left; position: relative;" width="252" height="64"></canvas></div>
+</div><div class="stats_box" id="methods-chart" style="width: 271.9px;">
+    <div class="mini-chart-label">
+        Method Count: 
+        
+        
+            <span class="mini-chart-total">46</span>
+        
+    </div>
+    <div class="mini-chart app-chart-height barchart_parent" data-metric="methods"><canvas class="barchart" style="float: left; position: relative;" width="252" height="64"></canvas></div>
+</div><div class="stats_box" id="types-chart" style="width: 271.9px;">
+    <div class="mini-chart-label">
+        Type Count: 
+        
+        
+            <span class="mini-chart-total">1</span>
+        
+    </div>
+    <div class="mini-chart app-chart-height barchart_parent" data-metric="types"><canvas class="barchart" style="float: left; position: relative;" width="252" height="64"></canvas></div>
+</div><div class="stats_box" id="namespaces-chart" style="width: 271.9px;">
+    <div class="mini-chart-label">
+        Namespace Count: 
+        
+        
+            <span class="mini-chart-total">1</span>
+        
+    </div>
+    <div class="mini-chart app-chart-height barchart_parent" data-metric="namespaces"><canvas class="barchart" style="float: left; position: relative;" width="252" height="64"></canvas></div>
+</div></div>
+<div id="detail-chart-section" style="display: none;">
+    <div id="key">
+        <div id="key-metric" class="title"></div>
+        <div id="key-stats" class="text"></div>
+        <div class="key-item">
+            <div class="key-icon key-unsat"></div>
+            <div>
+                <span> Unsatisfactory</span>
+            </div>
+        </div>
+        <div class="key-item">
+            <div class="key-icon key-sat"></div>
+            <div>
+                <span> Satisfactory</span>
+            </div>
+        </div>
+        <div class="key-item">
+            <div class="key-icon key-threshold"></div>
+            <div>
+                <span>
+                    &nbsp;<label id="lblThreshold"></label>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="detailedChart" class="app-chart-height barchart_parent"><canvas class="barchart" style="float: left; position: relative;" width="100" height="305"></canvas></div>
+</div></div></div>
+    <div id="main" style="height: 440px; width: 1357px;"><div id="execution-table-wrapper" style="height: 440px; width: 1357px;">
+    <div id="execution-dataTable_wrapper" class="dataTables_wrapper" role="grid"><div class="top"><div class="btn" title=""><div class="sprite gear_icon gray"></div></div><div class="btn" title=""><div class="sprite merge_icon gray"></div></div><div class="btn"><div class="sprite export_icon gray"></div></div><div class="btn" title=""><div class="sprite archive_icon"></div></div><div class="btn" title=""><div class="sprite trash_icon"></div></div><div id="execution-dataTable_length" class="dataTables_length"><label><select size="1" name="execution-dataTable_length" aria-controls="execution-dataTable"><option value="25" selected="selected">25</option><option value="50">50</option><option value="100">100</option></select> Executions per page</label></div><div class="dataTables_filter" id="execution-dataTable_filter"><label>Search executions: <input type="text" aria-controls="execution-dataTable"></label><div class="filter_clear"><div class="sprite x_icon"></div></div></div></div><div class="grid_settings" style="display: none;"><span>Choose columns:&nbsp;&nbsp;&nbsp;<span class="grid_selecthelp">Check(&nbsp;<a class="link_checkAll">all</a>,&nbsp;<a class="link_checkNone">none</a>,&nbsp;<a class="link_checkInvert">invert</a>&nbsp;)</span></span><br><div class="columnpicker"><input type="checkbox" class="togCol" value="Branch Cvg" checked="checked" id="togCol_2"><label>Branch Cvg</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Branch Pts" checked="checked" id="togCol_3"><label>Branch Pts</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Sequence Cvg" checked="checked" id="togCol_4"><label>Sequence Cvg</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Sequence Pts" checked="checked" id="togCol_5"><label>Sequence Pts</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Aggregated" checked="checked" id="togCol_6"><label>Aggregated</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Max CRAP Scr" checked="checked" id="togCol_7"><label>Max CRAP Scr</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="CRAPpy Mthds" checked="checked" id="togCol_8"><label>CRAPpy Mthds</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Max Cmplx" checked="checked" id="togCol_9"><label>Max Cmplx</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="%Sat Cmplx" checked="checked" id="togCol_10"><label>%Sat Cmplx</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Modules" checked="checked" id="togCol_11"><label>Modules</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Namespaces" checked="checked" id="togCol_12"><label>Namespaces</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Types" checked="checked" id="togCol_13"><label>Types</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Methods" checked="checked" id="togCol_14"><label>Methods</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Documents" checked="checked" id="togCol_15"><label>Documents</label></div><div class="columnpicker"><input type="checkbox" class="togCol" value="Lines" checked="checked" id="togCol_16"><label>Lines</label></div></div><div id="execution-dataTable_processing" class="dataTables_processing" style="visibility: hidden;">Loading execution history...</div><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="width: 1932px; padding-right: 0px;"><table cellpadding="0" cellspacing="0" border="0" class="display dataTable" style="margin-left: 0px; width: 1932px;"><thead><tr role="row"><th class="sorting_disabled selector" tabindex="0" rowspan="1" colspan="1" style="width: 30px;" aria-label=""></th><th class="caption sorting" tabindex="0" rowspan="1" colspan="1" style="width: 350px; cursor: pointer;" aria-label="Execution: activate to sort column ascending">Execution</th><th class="branch_cvg center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 130px;" aria-label="Branch Cvg: activate to sort column ascending">Branch Cvg</th><th class="branch_pts center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 100px;" aria-label="Branch Pts: activate to sort column ascending">Branch Pts</th><th class="sequence_cvg center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 130px; cursor: pointer;" aria-label="Sequence Cvg: activate to sort column ascending">Sequence Cvg</th><th class="sequence_pts center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 110px; cursor: pointer;" aria-label="Sequence Pts: activate to sort column ascending">Sequence Pts</th><th class="aggregated center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 80px; cursor: pointer;" aria-label="Aggregated: activate to sort column ascending">Aggregated</th><th class="crap_max number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 110px;" aria-label="Max CRAP Scr: activate to sort column ascending">Max CRAP Scr</th><th class="crappy_methods number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 115px;" aria-label="CRAPpy Mthds: activate to sort column ascending">CRAPpy Mthds</th><th class="complexity_max number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 95px;" aria-label="Max Cmplx: activate to sort column ascending">Max Cmplx</th><th class="complexity_sat sorting" tabindex="0" rowspan="1" colspan="1" style="width: 130px;" aria-label="%Sat Cmplx: activate to sort column ascending">%Sat Cmplx</th><th class="module number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 105px;" aria-label="Modules: activate to sort column ascending">Modules</th><th class="namespace number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 105px;" aria-label="Namespaces: activate to sort column ascending">Namespaces</th><th class="types number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 75px;" aria-label="Types: activate to sort column ascending">Types</th><th class="methods number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 80px;" aria-label="Methods: activate to sort column ascending">Methods</th><th class="documents number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 95px;" aria-label="Documents: activate to sort column ascending">Documents</th><th class="lines number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 75px;" aria-label="Lines: activate to sort column ascending">Lines</th></tr></thead></table></div></div><div class="dataTables_scrollBody" style="overflow: auto; width: 100%; height: 371px;"><table id="execution-dataTable" cellpadding="0" cellspacing="0" border="0" class="display dataTable" aria-describedby="execution-dataTable_info" style="margin-left: 0px; width: 1932px;"><thead><tr role="row" style="height: 0px;"><th class="sorting_disabled selector" tabindex="0" rowspan="1" colspan="1" style="width: 30px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label=""></th><th class="caption sorting" tabindex="0" rowspan="1" colspan="1" style="width: 350px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Execution: activate to sort column ascending"></th><th class="branch_cvg center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 130px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Branch Cvg: activate to sort column ascending"></th><th class="branch_pts center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 100px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Branch Pts: activate to sort column ascending"></th><th class="sequence_cvg center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 130px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Sequence Cvg: activate to sort column ascending"></th><th class="sequence_pts center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 110px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Sequence Pts: activate to sort column ascending"></th><th class="aggregated center sorting" tabindex="0" rowspan="1" colspan="1" style="width: 80px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Aggregated: activate to sort column ascending"></th><th class="crap_max number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 110px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Max CRAP Scr: activate to sort column ascending"></th><th class="crappy_methods number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 115px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="CRAPpy Mthds: activate to sort column ascending"></th><th class="complexity_max number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 95px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Max Cmplx: activate to sort column ascending"></th><th class="complexity_sat sorting" tabindex="0" rowspan="1" colspan="1" style="width: 130px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="%Sat Cmplx: activate to sort column ascending"></th><th class="module number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 105px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Modules: activate to sort column ascending"></th><th class="namespace number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 105px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Namespaces: activate to sort column ascending"></th><th class="types number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 75px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Types: activate to sort column ascending"></th><th class="methods number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 80px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Methods: activate to sort column ascending"></th><th class="documents number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 95px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Documents: activate to sort column ascending"></th><th class="lines number sorting" tabindex="0" rowspan="1" colspan="1" style="width: 75px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Lines: activate to sort column ascending"></th></tr></thead><tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="odd" id="ex_18DDB6A5282FD65FA420D56B32F6171BE5033742" errors="&lt;b&gt;Not aggregated&lt;/b&gt; - This execution has not been aggregated.  Coverage numbers will not be visible."><td class="selector sorting_1"><div class="cell"><input type="checkbox" class="rowCheck" name="select_18DDB6A5282FD65FA420D56B32F6171BE5033742" value="18DDB6A5282FD65FA420D56B32F6171BE5033742"></div></td><td class="caption"><div class="cell">
+
+
+
+
+
+
+<div class="captiongrp" data-executionid="18DDB6A5282FD65FA420D56B32F6171BE5033742" data-endtime="Thu Nov 14 2013 - 1:35:32 AM">
+    <div class="icons" id="execution_icon_18DDB6A5282FD65FA420D56B32F6171BE5033742">
+        
+            
+            <div id="execution_icon_18DDB6A5282FD65FA420D56B32F6171BE5033742" style="margin-left: 10px" class="sprite executions_icon light"></div>
+            
+        
+    </div>
+    <div class="caption" title="Snapshot: 11/14/2013 1:35:32 AM">
+        Snapshot: 11/14/2013 1:35:32 AM
+    </div>
+    
+    
+    <div class="subcaption">
+        BuildId: <b>56EFBB5ADC</b>
+    </div>
+    <div class="subcaption">
+        <b>Thu Nov 14 2013 - 1:35:32 AM</b> thru <b>Thu Nov 14 2013 - 1:35:32 AM</b>
+    </div>
+    </div>
+
+</div></td><td class="branch_cvg center"><div class="cell" style="width: 125px;"><div class="percent" style="width: 45px;">68.8%</div><div class="bar unsatisfactory" style="width: 49.5px; margin-left: 49px;"></div><div class="bar threshold" style="margin-left: 106.6px;"></div></div></td><td class="branch_pts center"><div class="cell"><div class="simple center">77 of 112</div></div></td><td class="sequence_cvg center"><div class="cell" style="width: 125px;"><div class="percent" style="width: 45px;">79.6%</div><div class="bar unsatisfactory" style="width: 57.33333333333333px; margin-left: 49px;"></div><div class="bar threshold" style="margin-left: 106.6px;"></div></div></td><td class="sequence_pts center"><div class="cell"><div class="simple center">344 of 432</div></div></td><td class="aggregated center"><div class="cell"><div class="simple">Yes</div></div></td><td class="crap_max number"><div class="cell"><div class="simple" style="padding-right: 25px;">110</div></div></td><td class="crappy_methods number"><div class="cell"><div class="simple" style="padding-right: 25px;">2</div></div></td><td class="complexity_max number"><div class="cell"><div class="simple" style="padding-right: 25px;">10</div></div></td><td class="complexity_sat"><div class="cell" style="width: 125px;"><div class="percent" style="width: 45px;">100%</div><div class="bar satisfactory" style="width: 72px; margin-left: 49px;"></div><div class="bar threshold" style="margin-left: 106.6px;"></div></div></td><td class="module number"><div class="cell"><div class="simple" style="padding-right: 25px;">1</div></div></td><td class="namespace number"><div class="cell"><div class="simple" style="padding-right: 25px;">1</div></div></td><td class="types number"><div class="cell"><div class="simple" style="padding-right: 25px;">1</div></div></td><td class="methods number"><div class="cell"><div class="simple" style="padding-right: 25px;">46</div></div></td><td class="documents number"><div class="cell"><div class="simple" style="padding-right: 25px;">5</div></div></td><td class="lines number"><div class="cell"><div class="simple" style="padding-right: 25px;">436</div></div></td></tr><tr class="even" id="ex_C1253DE4456FDAE73EC7ACE8B9D6021335FEFFE8" errors="&lt;b&gt;Not aggregated&lt;/b&gt; - This execution has not been aggregated.  Coverage numbers will not be visible."><td class="selector sorting_1"><div class="cell"><input type="checkbox" class="rowCheck" name="select_C1253DE4456FDAE73EC7ACE8B9D6021335FEFFE8" value="C1253DE4456FDAE73EC7ACE8B9D6021335FEFFE8"></div></td><td class="caption"><div class="cell">
+
+
+
+
+
+
+<div class="captiongrp" data-executionid="C1253DE4456FDAE73EC7ACE8B9D6021335FEFFE8" data-endtime="Thu Nov 14 2013 - 1:35:24 AM">
+    <div class="icons" id="execution_icon_C1253DE4456FDAE73EC7ACE8B9D6021335FEFFE8">
+        
+            
+            <div id="execution_icon_C1253DE4456FDAE73EC7ACE8B9D6021335FEFFE8" style="margin-left: 10px" class="sprite executions_icon light"></div>
+            
+        
+    </div>
+    <div class="caption" title="Snapshot: 11/14/2013 1:35:24 AM">
+        Snapshot: 11/14/2013 1:35:24 AM
+    </div>
+    
+    
+    <div class="subcaption">
+        BuildId: <b>56EFBB5ADC</b>
+    </div>
+    <div class="subcaption">
+        <b>Thu Nov 14 2013 - 1:35:24 AM</b> thru <b>Thu Nov 14 2013 - 1:35:24 AM</b>
+    </div>
+    </div>
+
+</div></td><td class="branch_cvg center"><div class="cell" style="width: 125px;"><div class="percent" style="width: 45px;">68.8%</div><div class="bar unsatisfactory" style="width: 49.5px; margin-left: 49px;"></div><div class="bar threshold" style="margin-left: 106.6px;"></div></div></td><td class="branch_pts center"><div class="cell"><div class="simple center">77 of 112</div></div></td><td class="sequence_cvg center"><div class="cell" style="width: 125px;"><div class="percent" style="width: 45px;">79.6%</div><div class="bar unsatisfactory" style="width: 57.33333333333333px; margin-left: 49px;"></div><div class="bar threshold" style="margin-left: 106.6px;"></div></div></td><td class="sequence_pts center"><div class="cell"><div class="simple center">344 of 432</div></div></td><td class="aggregated center"><div class="cell"><div class="simple">Yes</div></div></td><td class="crap_max number"><div class="cell"><div class="simple" style="padding-right: 25px;">110</div></div></td><td class="crappy_methods number"><div class="cell"><div class="simple" style="padding-right: 25px;">2</div></div></td><td class="complexity_max number"><div class="cell"><div class="simple" style="padding-right: 25px;">10</div></div></td><td class="complexity_sat"><div class="cell" style="width: 125px;"><div class="percent" style="width: 45px;">100%</div><div class="bar satisfactory" style="width: 72px; margin-left: 49px;"></div><div class="bar threshold" style="margin-left: 106.6px;"></div></div></td><td class="module number"><div class="cell"><div class="simple" style="padding-right: 25px;">1</div></div></td><td class="namespace number"><div class="cell"><div class="simple" style="padding-right: 25px;">1</div></div></td><td class="types number"><div class="cell"><div class="simple" style="padding-right: 25px;">1</div></div></td><td class="methods number"><div class="cell"><div class="simple" style="padding-right: 25px;">46</div></div></td><td class="documents number"><div class="cell"><div class="simple" style="padding-right: 25px;">5</div></div></td><td class="lines number"><div class="cell"><div class="simple" style="padding-right: 25px;">436</div></div></td></tr></tbody></table></div></div><div class="bottom"><div class="dataTables_info" id="execution-dataTable_info">Showing 1 to 2 of 2 entries</div><div class="dataTables_paginate paging_ncover" id="execution-dataTable_paginate"><div style="float: right"><div class="first paginate_button sprite" title="First"></div><div class="previous paginate_button sprite" title="Previous" id="execution-dataTable_previous"></div><div class="page label paginate_page">page </div><div><input type="text"></div><div class="of label paginate_of"> of 1</div><div class="next paginate_button sprite" title="Next" id="execution-dataTable_next"></div><div class="last paginate_button sprite" title="Last" id="execution-dataTable_last"></div></div></div></div></div>
+</div></div>
+  </div>
+</div></div>
+    <script type="text/javascript" src="./NCover Desktop  nunit-agent Project_files/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="./NCover Desktop  nunit-agent Project_files/jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" src="./NCover Desktop  nunit-agent Project_files/jquery.event.drag-2.0.min.js"></script>
+    <script type="text/javascript" src="./NCover Desktop  nunit-agent Project_files/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./NCover Desktop  nunit-agent Project_files/TableTools.min.js"></script>
+    <script type="application/javascript" src="./NCover Desktop  nunit-agent Project_files/init.js"></script>
+    <script type="text/javascript" src="./NCover Desktop  nunit-agent Project_files/ncover.min.js"></script>
+    <script type="text/javascript">Hoptoad.setEnvironment('Production');</script>
+
+    <script type="text/javascript">Hoptoad.setKey('995c345189b5391fbd4b93dc7ba12d94');</script>
+
+
+<style type="text/css">.SwiftPreview84830{width: auto;height: auto;display: block;position: static;background-color: transparent;border: 0;margin: 0;padding: 0;overflow: hidden;visibility: visible;}.SwiftPreviewImg84830{width: auto;height: auto;display: inline;position: static;background-color: transparent;border: 0;margin: 0;padding: 0;overflow: auto;visibility: visible;}div.SwiftPreview-container84830{pointer-events: none;position:absolute;overflow: hidden;display: none;top:0;left:0;z-index:99999;}div.SwiftPreview-content84830{padding:7px;background-color:black;border-radius:3px;-webkit-border-radius:3px;overflow: hidden;}img.SwiftPreview-img84830{left: 7px;top: 7px;position:absolute;overflow: hidden;-webkit-transform-origin: left top;}div.SwiftPreview-cover84830{pointer-events: none;top:5px;position:absolute;z-index: 999}img.SwiftPreview-loading84830{display:none;position:absolute;}iframe.SwiftPreview-iframe84830{display: block;overflow: auto;visibility: visible;border: 0;padding: 0px;margin: 0pxwidth: auto;height: auto;position: absolute;left: 7px;top: 7px;-webkit-transform-origin: left top;background-color:white;}</style><div pointer-events="none" class="SwiftPreview84830 SwiftPreview-container84830"><div class="SwiftPreview84830 SwiftPreview-arrow84830"></div><div class="SwiftPreview84830 SwiftPreview-content84830"><iframe class="SwiftPreview-iframe84830" sandbox="allow-same-origin"></iframe><img class="SwiftPreviewImg84830 SwiftPreview-img84830"><div class="SwiftPreview84830 SwiftPreview-cover84830"><img class="SwiftPreviewImg84830 SwiftPreview-loading84830" src="data:image/gif;base64,R0lGODlhKwALAPEAAP///wAAAIKCggAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAKwALAAACMoSOCMuW2diD88UKG95W88uF4DaGWFmhZid93pq+pwxnLUnXh8ou+sSz+T64oCAyTBUAACH5BAkKAAAALAAAAAArAAsAAAI9xI4IyyAPYWOxmoTHrHzzmGHe94xkmJifyqFKQ0pwLLgHa82xrekkDrIBZRQab1jyfY7KTtPimixiUsevAAAh+QQJCgAAACwAAAAAKwALAAACPYSOCMswD2FjqZpqW9xv4g8KE7d54XmMpNSgqLoOpgvC60xjNonnyc7p+VKamKw1zDCMR8rp8pksYlKorgAAIfkECQoAAAAsAAAAACsACwAAAkCEjgjLltnYmJS6Bxt+sfq5ZUyoNJ9HHlEqdCfFrqn7DrE2m7Wdj/2y45FkQ13t5itKdshFExC8YCLOEBX6AhQAADsAAAAAAAAAAAA="></div></div></div></body></html>
