@@ -77,7 +77,7 @@ namespace _422BankApplicationSharp
             dateCreated = Console.ReadLine();
 
             int counter = 0;
-            while ((mAccountsAvailable.ElementAt(counter) != true) && (counter < mNumberAccounts))
+            while ((counter < mNumberAccounts) &&  (mAccountsAvailable.ElementAt(counter) != true))
             {
                 //search for an empty spot in the list
                 counter ++;
