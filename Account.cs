@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace _422BankApplicationSharp
 {
-    class Account
+    public class Account
     {
         //constructors
         public Account(double initialBalance = 0.0,
