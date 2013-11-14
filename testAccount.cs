@@ -28,7 +28,14 @@ namespace _422BankApplicationSharp
         public void testAccountCopy([Values(-10.00, 0.00, 3.00, 300.00, 3000.00)] double bal, [Values(1, 12, 123, 1234, 12345)] int aNum, [Values("young", "alex")] string name, [Values("1-1-13", "may 4th 2009", "1-2-30000", "11/12/13", "this is not a date")] string date)
         {
             Account test1 = new Account(bal, aNum, name, date);
+
+            test1.MAccountNumber = 0;
+            test1.MBalance = 1.00;
+            test1.MDateCreated = "hi";
+            test1.MName = " hi";
             Account test2 = new Account(test1);
+
+
             Assert.AreEqual(test1.MAccountNumber, test2.MAccountNumber);
             Assert.AreEqual(test1.MBalance, test2.MBalance);
             Assert.AreEqual(test1.MDateCreated, test2.MDateCreated);
