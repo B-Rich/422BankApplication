@@ -7,3 +7,9 @@ C:\Users\DjEnjin\Desktop\422\hw 6\repo\bin\Debug\nunit.framework.dll
 C:\Users\DjEnjin\Desktop\422\hw 6\repo\bin\Debug\nunit.framework.xml
 C:\Users\DjEnjin\Desktop\422\hw 6\repo\obj\Debug\422BankApplicationSharp.exe
 C:\Users\DjEnjin\Desktop\422\hw 6\repo\obj\Debug\422BankApplicationSharp.pdb
+c:\users\other\documents\visual studio 2012\Projects\422BankApplicationSharp\422BankApplicationSharp\obj\Debug\422BankApplicationSharp.exe
+c:\users\other\documents\visual studio 2012\Projects\422BankApplicationSharp\422BankApplicationSharp\obj\Debug\422BankApplicationSharp.pdb
+c:\users\other\documents\visual studio 2012\Projects\422BankApplicationSharp\422BankApplicationSharp\obj\Debug\422BankApplicationSharp.csprojResolveAssemblyReference.cache
+c:\users\other\documents\visual studio 2012\Projects\422BankApplicationSharp\422BankApplicationSharp\bin\Debug\422BankApplicationSharp.exe
+c:\users\other\documents\visual studio 2012\Projects\422BankApplicationSharp\422BankApplicationSharp\bin\Debug\422BankApplicationSharp.pdb
+c:\users\other\documents\visual studio 2012\Projects\422BankApplicationSharp\422BankApplicationSharp\bin\Debug\nunit.framework.xml

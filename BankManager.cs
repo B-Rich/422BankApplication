@@ -10,7 +10,7 @@ namespace _422BankApplicationSharp
     class BankManager
     {
         //constructors
-        BankManager()
+        public BankManager()
         {
             mAccounts = new List<Account>();
             mAccountsAvailable = new List<bool>();
@@ -22,7 +22,7 @@ namespace _422BankApplicationSharp
 
         }
 
-        BankManager(int maxNumberAccounts)
+        public BankManager(int maxNumberAccounts)
         {
             mAccounts = new List<Account>();
             mAccountsAvailable = new List<bool>();
@@ -48,7 +48,7 @@ namespace _422BankApplicationSharp
         {
             int option = 0;
 
-            option = Console.Read();
+            option = Convert.ToChar(Console.ReadLine());
             Console.Clear();
 
             return option;
@@ -137,8 +137,8 @@ namespace _422BankApplicationSharp
                 Console.WriteLine("2. Withdraw Money");
                 Console.WriteLine("3. Deposit Money");
 
-                option = Console.Read();
-                switch (option)
+                option = Convert.ToChar(Console.ReadLine());
+                switch (option - 48)
                 {
                     case 1: Console.WriteLine("Enter Name: ");
                         name = Console.ReadLine();
@@ -162,7 +162,82 @@ namespace _422BankApplicationSharp
             return success;
         }
 
+        public void displayAccount()
+        {
+            int counter = 0;
+            counter = findAccount();
+            if ((counter < mNumberAccounts) && (mAccountsAvailable.ElementAt(counter) == false))
+            {
+                mAccounts.ElementAt(counter).printBalance();
+            }
+            else
+            {
+                Console.WriteLine("WARNING: Account does not exist");
+            }
+        }
 
+        public int findAccount()
+        {
+            int accountnumber = 0;
+            int counter = 0;
+            Console.WriteLine("Enter Account Number");
+            accountnumber = Convert.ToInt16(Console.ReadLine());
+
+            for (counter = 0; ((counter!=mAccounts.Count)&&(counter < mNumberAccounts) && (mAccounts.ElementAt(counter).MAccountNumber != accountnumber)); counter++)
+            {
+
+            }
+            return counter;
+
+        }
+        public void runBankApplication()
+        {
+            int option = 0;
+            bool status = true, success = true;
+
+            Console.WriteLine("***Welcome to Alex and Young's User Friendly Banking system ***");
+
+            do
+            {
+                displayMenu();
+                option = getMenuOption();
+                switch (option - 48)
+                {
+                    case 1: success = createAccount();
+                        if (success == false)
+                        {
+                            Console.WriteLine("WARNING: Could not create account!");
+                        }
+                        break;
+                    case 2: success = deleteAccount();
+                        if (success == false)
+                        {
+                            Console.WriteLine("WARNING: Could not delete account!");
+                        }
+                        break;
+                    case 3:
+                        success = updateAccount();
+                        if (success == false)
+                        {
+                            Console.WriteLine("WARNING: Could not update account!");
+                        }
+                        break;
+                    case 4:
+                        displayAccount();
+                        break;
+                    case 5:
+                        status = false;
+                        break;
+                    default:
+                        Console.WriteLine("ERROR: Invalid Choice");
+                        break;
+                }
+
+
+                
+
+            } while (status != false);
+        }
 
         //private variables
         List<Account> mAccounts; //The arrays have been replaced with dymically sized lists, because why not use the features of C# if we are converting to it.

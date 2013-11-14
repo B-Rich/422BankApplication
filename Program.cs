@@ -10,6 +10,8 @@ namespace _422BankApplicationSharp
     {
         static void Main(string[] args)
         {
+            BankManager bankapp = new BankManager();
+            bankapp.runBankApplication();
         }
     }
 }
